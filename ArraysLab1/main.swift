@@ -201,16 +201,16 @@ print(challenges[1] [1])
  print("\n")
 print("***PROBLEM 2.3 : REMOVING CHALLENGES")
 // All of the challenges will reset at the end of the month. Use the removeAll to remove everything from challenges. Print challenges.
-
- 
- 
+challenges.removeAll()
+print(challenges)
  
  print("\n")
  
  
  print("PROBLEM 2.4 : FITNESS COMMITMENTS")
 // Create a new array of type String that will represent challenges a user has committed to instead of available challenges. It can be an empty array or have a few items in it. Print it to see if it outputs in the console.
- 
+var committedChallenges: [String] = []
+print(committedChallenges)
 
  
  print("\n")
