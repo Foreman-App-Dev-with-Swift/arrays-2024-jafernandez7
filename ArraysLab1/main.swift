@@ -219,9 +219,14 @@ print("PROBLEM 2.5 : COMBINING IF STATEMENTS AND ARRAYS")
 // Write an if statement that will use .isEmpty to check if there is anything in the array. If there is not, print a statement asking the user to commit to a challenge. Add an else-if statement that will print "The challenge you have chosen is" and add the FIRST committedChallenges[0] if the array count is exactly equals 1 (.count). Then add an else statement that will print "You have chosen multiple challenges."
 //Hint: To be clear, you are using committedChallenges.isEmpty first and then committedChallenges.count next.
 //Then test your code by changing the number of challenges in the committedChallenges array above.
-
- 
-
-
-
-print("\n")
+if committedChallenges.isEmpty {
+    print("You have not committed to any challenges. Please commit to a challenge.")
+}
+else if committedChallenges.count == 1 {
+    print("The challenge you have chosen is" + committedChallenges[0])
+}
+else {
+    print("You have chosen multiple challenges.")
+}
+    
+    print("\n")
